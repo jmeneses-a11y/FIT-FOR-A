@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit & Força | Refeições Saudáveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LADO ESQUERDO -->
+    <aside class="menu">
+        <h1>FIT & FORÇA</h1>
+        <p class="sub">Refeições Saudáveis</p>
+
+        <button id="comecar">Começar </button>
+    </aside>
+
+    <!-- CARDÁPIO -->
+    <section class="cardapio">
+        <h2>Cardápio</h2>
+
+        <div class="item">
+    <img src="saladamediterrâneadefrango.jpg" alt="Salada Mediterrânea com Frango">
+    <div>
+        <h3>Salada Mediterrânea com Frango</h3>
+        <p>R$ 28,00</p>
+        <button onclick="adicionarItem('Salada com Frango', 28)">Adicionar</button>
+    </div>
+</div>
+        <div class="item">
+            <img src="Marmita Low Carb com Peixe.jpg">
+            <div>
+                <h3>Marmita Low Carb com Peixe</h3>
+                <p>R$ 32,00</p>
+                <button onclick="adicionarItem('Marmita Low Carb', 32)">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Suco Detox Verde.jpg">
+            <div>
+                <h3>Suco Detox Verde</h3>
+                <p>R$ 10,00</p>
+                <button onclick="adicionarItem('Suco Detox', 10)">Adicionar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PEDIDO -->
+    <section class="pedido">
+        <h2>Seu Pedido</h2>
+
+        <ul id="listaPedido"></ul>
+
+        <p>Total de itens: <span id="qtd">0</span></p>
+        <p>Total a pagar: R$ <span id="total">0.00</span></p>
+
+        
+        <div class="dados-cliente">
+    <h3>📦 Dados para entrega</h3>
+
+    <input 
+        type="text" 
+        id="endereco" 
+        placeholder="Rua, número e bairro"
+    >
+
+    <select id="pagamento">
+        <option value="">Forma de pagamento</option>
+        <option value="Pix">Pix</option>
+        <option value="Cartão">Cartão</option>
+        <option value="Dinheiro">Dinheiro</option>
+    </select>
+
+    <div class="cupom">
+    <h3>🎟️ Cupom de desconto</h3>
+    <input type="text" id="cupom" placeholder="Adicionars">
+    <button onclick="aplicarCupom()">Aplicar</button>
+    <p id="msgCupom"></p>
+    </div>
+</div>
+
+<button id="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+    </section>
+    <div id="mensagemFinal" class="mensagem-final"></div>
+    <button id="novoPedido" class="novo-pedido" onclick="reiniciarPedido()" style="display:none;">
+    Novo Pedido
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

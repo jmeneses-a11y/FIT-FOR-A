@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu {
+    width: 25%;
+    background: #0b0b0b;
+    padding: 40px;
+    text-align: center;
+}
+
+.menu h1 {
+    color: #6fdc6f;
+}
+
+.menu .sub {
+    margin-bottom: 40px;
+}
+
+.menu button {
+    padding: 15px;
+    background: #6fdc6f;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cardapio {
+    width: 45%;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    background: #1c1c1c;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 120px;
+    height: 120px;
+}
+
+.item div {
+    padding: 10px;
+}
+
+.item button {
+    margin-top: 10px;
+    background: #6fdc6f;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pedido {
+    width: 30%;
+    background: #181818;
+    padding: 20px;
+}
+
+.pedido ul {
+    list-style: none;
+    padding: 0;
+}
+
+#finalizar {
+    width: 100%;
+    padding: 15px;
+    background: #2ecc71;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mensagem-final {
+    margin-top: 20px;
+    padding: 20px;
+    background: #0f2f1a;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+
+.mensagem-final h3 {
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+.mensagem-final p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+.novo-pedido {
+    margin-top: 8px;          /* bem colado no “Volte sempre!” */
+    padding: 6px 14px;        /* menor */
+    background: #34db50;
+    border: none;
+    border-radius: 12px;      /* menos arredondado */
+    font-size: 12px;          /* letra menor */
+    color: white;
+    cursor: pointer;
+    display: inline-block;    /* NÃO ocupa a largura toda */
+    width: auto;
+}
+
+.pedido li {
+    margin-bottom: 10px;
+    background: #222;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.pedido li button {
+    margin-left: 5px;
+    background: #6fdc6f;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.pedido li button:last-child {
+    background: #e74c3c;
+    color: white;
+}
+.dados-cliente {
+    margin: 15px 0;
+}
+
+.dados-cliente input,
+.dados-cliente select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+.cupom {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #4CAF50;
+    border-radius: 10px;
+    background-color: #f6fff7;
+    text-align: center;
+}
+
+.cupom h3 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+.cupom input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cupom input:focus {
+    border-color: #4CAF50;
+}
+
+.cupom button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cupom button:hover {
+    background-color: #388e3c;
+}
+
+#msgCupom {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
